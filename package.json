@@ -1,0 +1,31 @@
+{
+  "name": "marvel-bootstrap",
+  "version": "1.0.0",
+  "description": "A simple project using Bootstrap to create a landing page for Marvel Studio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vendor" : "mv -r node_modules/* vendor/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresBetancourt-Dev/Marvel-Bootstrap.git"
+  },
+  "keywords": [
+    "Marvel",
+    "Heroes",
+    "Super"
+  ],
+  "author": "Andrés Betancourt Santana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndresBetancourt-Dev/Marvel-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/AndresBetancourt-Dev/Marvel-Bootstrap#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.4.4",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
