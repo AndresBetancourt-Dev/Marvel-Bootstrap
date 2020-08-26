@@ -4,12 +4,20 @@
     --gradient : linear-gradient(to left, rgba(0,0,0,.5), rgba(0,0,0,.1));
 }
 
-/*------------NAVBAR-----------*/
+html {
+    scroll-behavior: smooth;
+    transition: 2s;
+}
+
+
+
+/*-----NAVBAR-----*/
 
 .marvel-logo{
     font-family: 'Marvel';
     font-size: 30px;
     background-color: red;
+    color:white;
     padding: 0px 5px;
     transition: 2s;
 }
@@ -35,9 +43,10 @@
 }
 
 
-/*------------SLIDE-----------*/
+/*-----SLIDE-----*/
 
-
+.marvel-carousel{
+}
 
 
 .marvel-slide-caption h2{
@@ -65,9 +74,55 @@
     bottom: 12.5% !important;
 }
 
+/*-----MOVIES-----*/
 
-
-
-@media screen and (max-width: 990px){
+.marvel-movies{
+    display: grid;
+    justify-items: center;
+    background: linear-gradient(50deg,rgb(180, 23, 23), rgb(158, 25, 25), red);
 }
 
+.marvel-movies .row{
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+    border-radius: 5px;
+    background: white;
+}
+
+.card{
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+
+/*-----GAMES-----*/
+
+
+.marvel-games{
+    background: linear-gradient(45deg, black, #222, black, rgba(0,0,0,.85))
+}
+
+/*-----FOOTER-----*/
+
+.marvel-footer{
+    background: linear-gradient(50deg,rgb(180, 23, 23), rgb(158, 25, 25), red);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 570px){
+
+    .marvel-footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 770px){
+    .marvel-footer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .marvel-footer{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
